@@ -6,11 +6,12 @@ import logging
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-source_path = '/Users/khushm/Downloads'
-dest_image = '/Users/khushm/Downloads/Images'
-dest_audio = '/Users/khushm/audio_video'
-dest_files = '/Users/khushm/Downloads/Important_Docs'
-dest_installers = '/Users/khushm/Downloads/Installers'
+source_path = ''
+dest_image = ''
+dest_audio = ''
+dest_video = ''
+dest_files = ''
+dest_installers = ''
 
 
 # ? supported image types
@@ -47,7 +48,7 @@ class MoveFilesFunc(FileSystemEventHandler):
                 self.check_images(dest_image, name)
                 self.check_files(dest_files, name)
                 self.check_audio(dest_audio, name)
-                self.check_video(dest_audio, name)
+                self.check_video(dest_video, name)
                 self.check_installers(dest_installers, name)
             
     def check_images(self, dest, name):
