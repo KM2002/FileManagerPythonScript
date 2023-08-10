@@ -39,7 +39,7 @@ It monitors the directory for newly created files and categorizes them into diff
 5. Run the script:
 
     ```sh
-    python file_manager.py
+    python3 file_manager.py
     ```
    The script will start monitoring the specified directory and organizing files automatically.
 
